@@ -17,9 +17,9 @@ export class ProductComponent implements OnInit {
   constructor(
     private productService: ProductService,
     private cartService: CartService
-  ) {}
+  ) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   selectedChange(value: any) {
     this.selectedItem = value;

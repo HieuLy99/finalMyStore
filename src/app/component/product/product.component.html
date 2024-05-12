@@ -7,11 +7,12 @@
     </div>
     <div class="product-detail">$ {{ productItem.price }}</div>
     <form (ngSubmit)="addProductToCart(productItem)">
-        <select [(ngModel)]="selectedItem" style="width: 100px" class="product-item-detail form-select" (ngModelChange)="selectedChange($event)" [ngModelOptions]="{ standalone: true }">
-      <option *ngFor="let value of productCount" value="{{ value }}">
-        {{ value }}
-      </option>
-    </select>
+        <select [(ngModel)]="selectedItem" style="width: 100px" class="product-item-detail form-select"
+            (ngModelChange)="selectedChange($event)" [ngModelOptions]="{ standalone: true }">
+            <option *ngFor="let value of productCount" value="{{ value }}">
+                {{ value }}
+            </option>
+        </select>
         <input class="btn-add" type="submit" value="Add to Cart" class="mt-2 btn btn-primary" />
     </form>
 </div>

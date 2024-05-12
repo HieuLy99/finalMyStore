@@ -16,7 +16,7 @@ export class CartComponent implements OnInit {
   totalPrice: number | string = '';
   productCount: string[] = ['1', '2', '3', '4', '5'];
   selectedItem = '';
-  constructor(private cartService: CartService, private route: Router) {}
+  constructor(private cartService: CartService, private route: Router) { }
 
   ngOnInit(): void {
     this.cartProducts = this.cartService.getCartProduct();
@@ -42,9 +42,9 @@ export class CartComponent implements OnInit {
   }
 
   calculateTotal() {
-    this.totalPrice = this.cartProducts.reduce((acc, item) => {
+    this.totalPrice = this.cartProducts.reduce((account, item) => {
       this.totalPrice = parseFloat(
-        (acc + item.price * Number(item.amount)).toFixed(2)
+        (account + item.price * Number(item.amount)).toFixed(2)
       );
       return this.totalPrice;
     }, 0);

@@ -1,6 +1,6 @@
 
 
-# udacity-my-store
+# About the project 
 MyStore is a single-page application built in Angular, that offers a rich, dynamic experience on the web. It presents a list of product which can be added to a cart then checkout. Bellow are all the functionality one can perform:  
 - View list of products.
 - Add products to cart.
@@ -9,25 +9,23 @@ MyStore is a single-page application built in Angular, that offers a rich, dynam
 - Checkout products in cart.
 - Calculate cart total in cart.
 
-Start coding by: Nhu Y Ho 
+# MyStore
 
-- Clone this repo : https://github.com/nhuyho/udacity-my-store.git;
-- Remove git remote
-- Add new git remote to new service repo
-- Update project name at (package.json,...)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
 
-## Dependencies 
+## Install
+Run `npm install` to install all packages
+## Development server
 
-To install the dependencies for this project, run the following command: 
-```
-npm install
-```
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Start server
-On the same terminal, run the command
-   ```
-ng serve
-     
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.  
 
 #### Sample request:
 Navigate to 

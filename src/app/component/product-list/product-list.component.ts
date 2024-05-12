@@ -12,7 +12,7 @@ export class ProductListComponent implements OnInit {
   private ngUnsubscribe = new Subject<void>();
   products: Product[] = [];
 
-  constructor(private productService: ProductService) {}
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
     this.productService

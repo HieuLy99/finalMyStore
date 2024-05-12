@@ -1,6 +1,7 @@
         .product-item {
             display: flex;
             align-items: center;
+
             &__image {
                 width: 20rem;
                 border-radius: 10px;
@@ -9,13 +10,16 @@
                 margin-top: 2rem;
                 box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
             }
+
             &__info {
                 padding: 4rem;
+
                 select {
                     width: 6rem;
                     padding: 6px;
                     border-radius: 5px;
                 }
+
                 button {
                     background-color: #82D173;
                     border: 1px solid #82D173 !important;

@@ -11,7 +11,7 @@ import { ProductService } from 'src/app/service/product.service';
 export class HeaderComponent implements OnInit {
   pageTitle: string = 'My Store';
   cartProductList!: Product[];
-  constructor(private cartService: CartService) {}
+  constructor(private cartService: CartService) { }
 
   ngOnInit(): void {
     this.cartProductList = this.cartService.getCartProduct();
