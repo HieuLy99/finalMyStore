@@ -1,0 +1,10 @@
+.product {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 3rem auto;
+    flex: 1;
+    gap: 1rem;
+    justify-content: space-between;
+}
