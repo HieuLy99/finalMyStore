@@ -55,6 +55,10 @@ export class CartComponent implements OnInit {
     const products = storageProducts.filter(
       (product: Product) => product.id !== id
     );
+    const productsSelected = storageProducts.find(
+      (product: Product) => product.id === id
+    );
+    alert(`The product ${productsSelected.name} has been removed from the cart `);
     window.localStorage.clear();
     localStorage.setItem('products', JSON.stringify(products));
     this.refresh();
